@@ -76,12 +76,23 @@ main{
 
 .svg-contacts-second:hover,
 .svg-contacts-second:focus{
-    fill: var(--highlight-color);
+    
 }
 
-.lviv{
+.item-contacts{
     display: flex;
     align-items: center;
+    font-style: normal;
+}
+
+.item-contacts:hover .p-contacts,
+.item-contacts:focus .p-contacts,
+.item-contacts:hover .svg-contacts,
+.item-contacts:focus .svg-contacts,
+.item-contacts:hover .svg-contacts-second,
+.item-contacts:focus .svg-contacts-second{
+    color: var(--highlight-color);
+    fill: var(--highlight-color);
 }
 
 .p-contacts{
