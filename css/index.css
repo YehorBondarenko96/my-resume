@@ -106,3 +106,11 @@ main{
     margin: 0 0 0 5px;
 }
 
+.list-tech-scils{
+    list-style-type: disc;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
