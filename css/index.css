@@ -1,0 +1,80 @@
+:root{
+    --first-color: #daf0ff;
+    --second-color: #000080;
+    --highlight-color: #02E12E
+}
+
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+img{
+    display: block;
+}
+
+button{
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent 0 solid;
+}
+
+.link{
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--first-color);
+}
+
+main{
+    max-width: 1130px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.name-photo{
+    display: flex;
+    height: 150px;
+    width: 100%;
+    background-color: var(--second-color);
+    color: white;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.photo{
+    position: absolute;
+    left: 10%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.svg-contacts{
+    width: 30px;
+    height: 30px;
+    fill: var(--second-color);
+}
+
+.svg-contacts:focus,
+.svg-contacts:hover{
+    fill: var(--highlight-color);
+}
+
+.svg-contacts-second{
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+.svg-contacts-second:hover,
+.svg-contacts-second:focus{
+    fill: var(--highlight-color);
+}
