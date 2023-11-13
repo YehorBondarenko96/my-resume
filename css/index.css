@@ -57,6 +57,12 @@ main{
     object-fit: cover;
 }
 
+.list-contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .svg-contacts{
     width: 30px;
     height: 30px;
@@ -97,6 +103,6 @@ main{
 
 .p-contacts{
     color: var(--second-color);
-    margin: 0;
+    margin: 0 0 0 5px;
 }
 
