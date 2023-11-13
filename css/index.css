@@ -78,3 +78,14 @@ main{
 .svg-contacts-second:focus{
     fill: var(--highlight-color);
 }
+
+.lviv{
+    display: flex;
+    align-items: center;
+}
+
+.p-contacts{
+    color: var(--second-color);
+    margin: 0;
+}
+
