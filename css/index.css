@@ -114,3 +114,18 @@ main{
     gap: 5px;
 }
 
+.list-soft-scils{
+    list-style-type: disc;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.list-languages{
+    list-style-type: disc;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
