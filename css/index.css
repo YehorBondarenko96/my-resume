@@ -155,9 +155,18 @@ main{
 }
 
 .h-exemple-project-experiens{
-    margin: 0;
+    margin: 5px 0;
+    color: black;
+}
+
+.link-exemple-project-experiens{
+    margin-left: 3px;
 }
 
 .h-exemple-work-experience{
+    margin: 5px 0;
+}
+
+.h-exemple-education{
     margin: 5px 0;
 }
