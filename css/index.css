@@ -22,7 +22,6 @@ button{
 }
 
 p{
-    text-indent: 1em;
     margin: 0;
 }
 
@@ -62,6 +61,10 @@ main{
     object-fit: cover;
 }
 
+.name{
+    margin-bottom: 10px;
+}
+
 .all-info{
     display: flex;
     margin-bottom: 30px;
@@ -79,21 +82,12 @@ main{
     fill: var(--second-color);
 }
 
-.svg-contacts:focus,
-.svg-contacts:hover{
-    fill: var(--highlight-color);
-}
-
 .svg-contacts-second{
     width: 30px;
     height: 30px;
     fill: white;
 }
 
-.svg-contacts-second:hover,
-.svg-contacts-second:focus{
-    
-}
 
 .item-contacts{
     display: flex;
@@ -116,7 +110,7 @@ main{
     margin: 0 0 0 5px;
 }
 
-.list-tech-scils{
+.list-tech-skills{
     list-style-type: disc;
     margin-left: 15px;
     display: flex;
@@ -124,7 +118,7 @@ main{
     gap: 5px;
 }
 
-.list-soft-scils{
+.list-soft-skills{
     list-style-type: disc;
     margin-left: 15px;
     display: flex;
@@ -151,16 +145,26 @@ main{
     margin-top: 0;
 }
 
-.h-h-exemple-project-experiens{
+.p-summary{
+    text-indent: 0;
+    margin: 5px 0;
+}
+
+.h-h-exemple-project-experience{
     display: flex;
 }
 
-.h-exemple-project-experiens{
+.h-exemple-project-experience{
     margin: 5px 0;
     color: black;
 }
 
-.link-exemple-project-experiens{
+.p-project-experience{
+    text-indent: 0;
+    margin: 5px 0;
+}
+
+.link-exemple-project-experience{
     margin-left: 3px;
 }
 
@@ -168,6 +172,18 @@ main{
     margin: 5px 0;
 }
 
+.p-time-work-experience{
+    margin: 5px 0;
+    color: var(--second-color);
+    font-weight: 500;
+}
+
 .h-exemple-education{
     margin: 5px 0;
+}
+
+.p-time-education{
+    margin: 5px 0;
+    color: var(--second-color);
+    font-weight: 500;
 }
