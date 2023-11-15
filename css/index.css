@@ -187,3 +187,7 @@ main{
     color: var(--second-color);
     font-weight: 500;
 }
+
+.span-degree{
+    font-weight: 500;
+}
