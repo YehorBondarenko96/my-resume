@@ -1,6 +1,6 @@
 :root{
     --first-color: #daf0ff;
-    --second-color: #000080;
+    --second-color: #fff;
     --highlight-color: #02E12E
 }
 
@@ -29,36 +29,32 @@ p{
     text-decoration: none;
 }
 
+h3{
+    position: relative;
+    font-size: 24px;
+}
+
+h3::after{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #fff;
+}
+
 body{
     background-color: var(--first-color);
+    font-family: 'M PLUS 1', sans-serif;
+    font-size: 14px;
 }
 
 main{
     max-width: 1130px;
     width: 100%;
     margin: 0 auto;
-    padding: 15px;
-}
-
-.name-photo{
-    display: flex;
-    height: 150px;
-    width: 100%;
-    background-color: var(--second-color);
-    color: white;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.photo{
-    position: absolute;
-    left: 10%;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
+    padding: 0;
 }
 
 .name{
@@ -70,6 +66,24 @@ main{
     margin-bottom: 30px;
 }
 
+.left-info{
+    background-color: #323B4C;
+    color: #fff;
+    padding: 50px 0 20px;
+}
+
+.photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.text-left-info{
+    padding-left: 50px;
+}
+
 .list-contacts{
     display: flex;
     flex-direction: column;
@@ -79,15 +93,8 @@ main{
 .svg-contacts{
     width: 30px;
     height: 30px;
-    fill: var(--second-color);
-}
-
-.svg-contacts-second{
-    width: 30px;
-    height: 30px;
     fill: white;
 }
-
 
 .item-contacts{
     display: flex;
@@ -108,6 +115,10 @@ main{
 .p-contacts{
     color: var(--second-color);
     margin: 0 0 0 5px;
+}
+
+.mail{
+    margin-right: 20px;
 }
 
 .list-tech-skills{
@@ -135,8 +146,7 @@ main{
 }
 
 .right-info{
-    margin-left: 20px;
-    margin-top: 10px;
+    margin: 0;
     background-color: white;
     padding: 10px;
 }

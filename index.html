@@ -5,20 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Yehor Bondarenko</title>
         <link rel="icon" type="image/png" href="./images/image.jpg"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;700&display=swap" rel="stylesheet">
         <link href="./css/modern-normalize.min.css" rel="stylesheet"/>
         <link href="./css/index.css" rel="stylesheet"/>
     </head>
     <body>
         <main> 
-            <div class="name-photo">
-                <img class="photo" src="./images/image.jpg"/>
-                <div class="name-position">
-                    <h1 class="name">Yehor Bondarenko</h1>
-                    <p class="position">Junior Frontend developer</p>
-                </div>
-            </div>
             <div class="all-info">
                 <div class="left-info">
+                    <div class="img">
+                        <img class="photo" src="./images/image.jpg"/>
+                    </div>
+                    <div class="text-left-info">
                     <div class="contacts">
                         <h3 class="h-contacts">Contacts</h3>
                         <address>
@@ -28,7 +28,7 @@
                                     <svg class="svg-contacts">
                                         <use href="./images/symbol-defs.svg#_27_phone-call"/>
                                     </svg>
-                                    <p class="p-contacts">+38 096 657 66 83</p>
+                                    <p class="p-contacts number">+38 096 657 66 83</p>
                                 </a>
                             </li>
                             <li>
@@ -36,7 +36,7 @@
                                     <svg class="svg-contacts">
                                         <use href="./images/symbol-defs.svg#_27_phone-call"/>
                                     </svg>
-                                    <p class="p-contacts">+38 095 618 15 85</p>
+                                    <p class="p-contacts number">+38 095 618 15 85</p>
                                 </a>
                             </li>
                             <li>
@@ -44,7 +44,7 @@
                                     <svg class="svg-contacts">
                                         <use href="./images/symbol-defs.svg#_08_mail-01"/>
                                     </svg>
-                                    <p class="p-contacts">egorbondarenko1996@gmail.com</p>
+                                    <p class="p-contacts mail">egorbondarenko1996@gmail.com</p>
                                 </a>
                             </li>
                             <li>
@@ -57,7 +57,7 @@
                             </li>
                             <li>
                                 <a class="link item-contacts" href="tg://resolve?domain=@yehorbondarenko">
-                                <svg class="svg-contacts-second">
+                                <svg class="svg-contacts">
                                     <use href="./images/symbol-defs.svg#telegram"/>
                                 </svg>
                                 <p class="p-contacts">@yehorbondarenko</p>
@@ -111,7 +111,12 @@
                         </ul>
                     </div>
                 </div>
+                </div>
                 <div class="right-info">
+                    <div class="name-position">
+                        <h1 class="name">Yehor Bondarenko</h1>
+                        <p class="position">Junior Frontend developer</p>
+                    </div>
                     <div class="summary">
                         <h2 class="h-summary">About</h2>
                         <p class="p-summary">
