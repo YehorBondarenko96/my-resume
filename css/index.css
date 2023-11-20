@@ -29,6 +29,20 @@ p{
     text-decoration: none;
 }
 
+h2{
+    position: relative;
+}
+
+h2::after{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #000;
+}
+
 h3{
     position: relative;
     font-size: 24px;
@@ -45,7 +59,6 @@ h3::after{
 }
 
 body{
-    background-color: var(--first-color);
     font-family: 'M PLUS 1', sans-serif;
     font-size: 14px;
 }
@@ -57,13 +70,8 @@ main{
     padding: 0;
 }
 
-.name{
-    margin-bottom: 10px;
-}
-
 .all-info{
     display: flex;
-    margin-bottom: 30px;
 }
 
 .left-info{
@@ -148,7 +156,21 @@ main{
 .right-info{
     margin: 0;
     background-color: white;
-    padding: 10px;
+    padding: 20px;
+}
+
+.name{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.second-name{
+    font-weight: 400;
+}
+
+.position{
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .h-summary{
@@ -157,16 +179,52 @@ main{
 
 .p-summary{
     text-indent: 0;
-    margin: 5px 0;
+    margin: 15px 0;
+    font-size: 12px;
+}
+
+.list-project-experience{
+    padding-left: 20px;
 }
 
 .h-h-exemple-project-experience{
     display: flex;
+    position: relative;
 }
 
 .h-exemple-project-experience{
     margin: 5px 0;
     color: black;
+}
+
+.h-item-experience::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 48px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.h-item-experience::after{
+    content: "";
+  position: absolute;
+  height: 100%; /* Висота лінії */
+  width: 2px; /* Ширина лінії */
+  background-color: #000; /* Колір лінії */
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+
+.h-item-experience+.h-item-experience::before{
+    top: 50%;
+  transform: translateY(-50%);
 }
 
 .p-project-experience{
