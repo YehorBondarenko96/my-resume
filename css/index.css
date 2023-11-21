@@ -1,7 +1,13 @@
 :root{
-    --first-color: #daf0ff;
+    --text-color: #737373;
     --second-color: #fff;
     --highlight-color: #02E12E
+}
+
+body{
+    font-family: 'M PLUS 1', sans-serif;
+    font-size: 12px;
+    color: var(--text-color);
 }
 
 ul{
@@ -31,6 +37,8 @@ p{
 
 h2{
     position: relative;
+    color: #000;
+    font-size: 20px;
 }
 
 h2::after{
@@ -45,7 +53,7 @@ h2::after{
 
 h3{
     position: relative;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 h3::after{
@@ -58,16 +66,8 @@ h3::after{
     background-color: #fff;
 }
 
-body{
-    font-family: 'M PLUS 1', sans-serif;
-    font-size: 14px;
-}
-
-main{
-    max-width: 1130px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
+h4{
+    font-size: 16px;
 }
 
 .all-info{
@@ -156,12 +156,13 @@ main{
 .right-info{
     margin: 0;
     background-color: white;
-    padding: 20px;
+    padding: 50px 20px 20px;
 }
 
 .name{
     margin-bottom: 10px;
     font-size: 30px;
+    color: #000;
 }
 
 .second-name{
@@ -169,35 +170,35 @@ main{
 }
 
 .position{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
-}
-
-.h-summary{
-    margin-top: 0;
+    color: #000;
 }
 
 .p-summary{
     text-indent: 0;
-    margin: 15px 0;
-    font-size: 12px;
+    margin: 50px 0;
 }
 
-.list-project-experience{
+.stack-info{
+    margin: 40px 0;
+}
+
+.list-portfolio{
     padding-left: 20px;
 }
 
-.h-h-exemple-project-experience{
+.hh{
     display: flex;
     position: relative;
 }
 
 .h-exemple-project-experience{
     margin: 5px 0;
-    color: black;
+    color: var(--text-color);
 }
 
-.h-item-experience::before{
+.h-item::before{
     content: "";
     display: inline-block;
     position: absolute;
@@ -209,27 +210,27 @@ main{
     height: 15px;
     border: 2px solid black;
     border-radius: 50%;
+    background-color: white;
+    z-index: 2;
 }
 
-.h-item-experience::after{
+.one-item{
+    position: relative;
+}
+
+.pp::before{
     content: "";
-  position: absolute;
-  height: 100%; /* Висота лінії */
-  width: 2px; /* Ширина лінії */
-  background-color: #000; /* Колір лінії */
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0;
-}
-
-.h-item-experience+.h-item-experience::before{
-    top: 50%;
-  transform: translateY(-50%);
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: #000;
+    left: -13.5px;
+    top: 10px;
 }
 
 .p-project-experience{
     text-indent: 0;
-    margin: 5px 0;
+    margin: 0;
 }
 
 .link-exemple-project-experience{
@@ -238,12 +239,13 @@ main{
 
 .h-exemple-work-experience{
     margin: 5px 0;
+
 }
 
 .p-time-work-experience{
     margin: 5px 0;
-    color: var(--second-color);
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .h-exemple-education{
@@ -252,10 +254,46 @@ main{
 
 .p-time-education{
     margin: 5px 0;
-    color: var(--second-color);
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .span-degree{
-    font-weight: 500;
+    font-weight: 700;
+}
+
+
+
+@media (min-width:830px) {
+    body{
+        font-size: 14px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+
+    h4{
+        font-size: 18px;
+    }
+
+    .name{
+        font-size: 36px;
+    }
+
+    .position{
+        font-size: 24px;
+    }
+
+    .p-time-work-experience{
+        font-size: 16px;
+    }
+
+    .p-time-education{
+        font-size: 16px;
+    }
 }
