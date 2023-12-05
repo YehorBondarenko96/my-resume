@@ -89,7 +89,7 @@ h4{
 }
 
 .text-left-info{
-    padding-left: 50px;
+    padding-left: 10px;
 }
 
 .list-contacts{
@@ -126,7 +126,7 @@ h4{
 }
 
 .mail{
-    margin-right: 20px;
+    margin-right: 5px;
 }
 
 .list-tech-skills{
@@ -156,7 +156,7 @@ h4{
 .right-info{
     margin: 0;
     background-color: white;
-    padding: 50px 20px 20px;
+    padding: 10px 5px 20px;
 }
 
 .name{
@@ -177,25 +177,27 @@ h4{
 
 .p-summary{
     text-indent: 0;
-    margin: 50px 0;
+    margin: 10px 0;
 }
 
 .stack-info{
-    margin: 40px 0;
+    margin: 0 0 10px 0;
 }
 
 .list-portfolio{
     padding-left: 20px;
 }
 
-.hh{
-    display: flex;
-    position: relative;
-}
-
 .h-exemple-project-experience{
     margin: 5px 0;
+}
+
+.h-exemple-project-experience a{
     color: var(--text-color);
+}
+
+.h-item{
+    position: relative;
 }
 
 .h-item::before{
@@ -234,7 +236,7 @@ h4{
 }
 
 .link-exemple-project-experience{
-    margin-left: 3px;
+    margin-left: 4px;
 }
 
 .h-exemple-work-experience{
@@ -263,6 +265,48 @@ h4{
 }
 
 
+
+@media (min-width: 500px){
+    .text-left-info{
+        padding-left: 30px;
+    }
+
+    .mail{
+        margin-right: 10px;
+    }
+
+    .right-info{
+        padding: 10px 10px 20px;
+    }
+}
+
+@media (min-width: 600px){
+    .text-left-info{
+        padding-left: 50px;
+    }
+
+    .mail{
+        margin-right: 20px;
+    }
+
+    .right-info{
+        padding: 50px 20px 20px;
+    }
+
+    .p-summary{
+        margin: 50px 0;
+    }
+
+    .stack-info{
+        margin: 0 0 40px 0;
+    }
+}
+
+@media (min-width: 715px){
+    .hh{
+        display: flex;
+    }
+}
 
 @media (min-width:830px) {
     body{
@@ -297,3 +341,8 @@ h4{
         font-size: 16px;
     }
 }
+
+
+
+
+
