@@ -223,11 +223,11 @@ h4{
 .pp::before{
     content: "";
     position: absolute;
-    height: 100%;
+    height: 104%;
     width: 2px;
     background-color: #000;
     left: -13.5px;
-    top: 10px;
+    top: 14px;
 }
 
 .p-project-experience{
@@ -305,6 +305,7 @@ h4{
 @media (min-width: 715px){
     .hh{
         display: flex;
+        gap: 4px;
     }
 }
 
@@ -339,6 +340,19 @@ h4{
 
     .p-time-education{
         font-size: 16px;
+    }
+}
+
+@media (max-width: 1046px)
+    and (min-width: 685px){
+    .pp::before{
+        height: 106%;
+    }
+}
+
+@media (max-width: 535px){
+    .pp::before{
+        height: 100%;
     }
 }
 
