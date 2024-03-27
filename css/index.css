@@ -81,8 +81,8 @@ h4{
 }
 
 .photo{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto;
@@ -90,6 +90,7 @@ h4{
 
 .text-left-info{
     padding-left: 10px;
+    font-size: 10px;
 }
 
 .list-contacts{
@@ -270,6 +271,7 @@ h4{
 @media (min-width: 500px){
     .text-left-info{
         padding-left: 30px;
+        font-size: 12px;
     }
 
     .mail{
@@ -282,9 +284,6 @@ h4{
 }
 
 @media (min-width: 600px){
-    .text-left-info{
-        padding-left: 50px;
-    }
 
     .mail{
         margin-right: 20px;
@@ -304,6 +303,15 @@ h4{
 }
 
 @media (min-width: 715px){
+    .photo{
+        width: 200px;
+        height: 200px;
+    }
+
+    .text-left-info {
+        padding-left: 50px;
+    }
+
     .hh{
         display: flex;
         gap: 4px;
@@ -325,6 +333,10 @@ h4{
 
     h4{
         font-size: 18px;
+    }
+
+    .text-left-info{
+        font-size: 14px;
     }
 
     .name{
