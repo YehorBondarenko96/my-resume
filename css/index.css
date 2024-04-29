@@ -237,6 +237,10 @@ h4{
     margin: 0;
 }
 
+.title-project{
+    white-space: nowrap;
+}
+
 .link-exemple-project-experience{
     margin-left: 4px;
 }
@@ -290,7 +294,7 @@ h4{
     }
 
     .right-info{
-        padding: 50px 20px 20px;
+        padding: 25px 10px 20px;
     }
 
     .p-summary{
@@ -318,7 +322,7 @@ h4{
     }
 }
 
-@media (min-width:830px) {
+@media (min-width: 830px) {
     body{
         font-size: 14px;
     }
@@ -356,6 +360,12 @@ h4{
     }
 }
 
+@media (min-width: 1000px){
+    .right-info {
+        padding: 50px 20px 20px;
+    }
+}
+
 @media (max-width: 1046px)
     and (min-width: 685px){
     .pp::before{
@@ -375,10 +385,8 @@ h4{
     
     .mail{
         white-space: nowrap;
-            /* Забороняємо перенесення тексту на новий рядок */
-            overflow: hidden;
-            /* Обмежуємо область відображення тексту */
-            text-overflow: ellipsis;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
